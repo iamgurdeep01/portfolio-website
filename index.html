@@ -1,291 +1,657 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Aditya Vikram Singh" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
-        Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram
-        Singh UMass Amherst, Aditya Vikram Singh New Delhi, Aditya Vikram
-        Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
-        Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Aditya Vikram Singh</title>
+<html lang="en" data-theme="dark">
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
+<head>
+  <!-- ========== META ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Office Administrator, Case Manager, and Computer System Technician portfolio website — Gurdeep Singh.">
+  <meta name="keywords"
+    content="Gurdeep Singh, Portfolio, Office Administrator, Case Manager, Immigration, Security, Computer System Technician">
+  <meta name="author" content="Gurdeep Singh">
 
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">ADITYA VIKRAM SINGH</span>
-          <span class="site-description">Programmer • Web Developer • Graphic Designer</span>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gurdeep Singh | Portfolio">
+  <meta property="og:description"
+    content="Office Administrator, Case Manager, and Computer System Technician portfolio website.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/IMG_0279.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <title>Gurdeep Singh | Portfolio</title>
+
+  <!-- ========== FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- ========== ICONS ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ========== STYLESHEET ========== -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- ========== STRUCTURED DATA ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gurdeep Singh",
+    "jobTitle": "Office Administrator | Case Manager | Computer System Technician",
+    "url": "",
+    "email": "srangurdeepsingh1@gmail.com",
+    "telephone": "+1-613-202-1834",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brampton",
+      "addressRegion": "Ontario",
+      "addressCountry": "CA"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Mohawk College"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">GS<span class="logo-dot">.</span></a>
+
+      <!-- Mobile hamburger toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Theme toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       Inspired by Ardian's bold hero — large name overlay, full-
+       screen layout, portrait on right, text left.
+       ============================================================ -->
+  <section id="hero" class="hero">
+    <!-- Large background name overlay (like ARDIAN / ALEXENDAR) -->
+    <div class="hero-bg-text" aria-hidden="true">GURDEEP</div>
+
+    <div class="hero-inner">
+      <!-- Left column — text content -->
+      <div class="hero-content" id="heroContent">
+        <p class="hero-label reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">
+          <span class="hero-first">Gurdeep</span>
+          <span class="hero-last">Singh<span class="hero-dot">.</span></span>
         </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/avs1508/">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+        <p class="hero-headline reveal">
+          <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-intro reveal">
+          From IT systems to security leadership to immigration case management —
+          I bring operational excellence, team leadership, and client-focused
+          solutions to every challenge.
+        </p>
+        <div class="hero-ctas reveal">
+          <a href="#experience" class="btn btn-primary">
+            <span>View Experience</span>
+            <i class="fas fa-arrow-right"></i>
           </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/AVS1508">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          <a href="#contact" class="btn btn-outline">
+            <span>Contact Me</span>
           </a>
-          <a aria-label="My Résumé" target="_blank" href="https://www.adityavsingh.com/resume.html">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:avsingh@umass.edu" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
         </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+        <!-- Social links in hero -->
+        <div class="hero-socials reveal">
+          <a href="https://www.linkedin.com/in/gurdeep-singh/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:srangurdeepsingh1@gmail.com" aria-label="Send email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+16132021834" aria-label="Call me">
+            <i class="fas fa-phone"></i>
+          </a>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
+      <!-- Right column — profile image -->
+      <div class="hero-portrait reveal reveal-delay-1">
+        <div class="hero-portrait-frame">
+          <img src="assets/img/IMG_0279.jpeg" alt="Gurdeep Singh — Professional portrait" class="hero-portrait-img"
+            loading="eager" width="600" height="600">
+        </div>
+        <div class="hero-portrait-glow" aria-hidden="true"></div>
+      </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.jpg"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          I am a junior in the College of Information and Computer Sciences at the University of Massachusetts Amherst,
-          pursuing an undergraduate degree. I am majoring in Computer Science, with intent to double major in
-          Mathematics with Statistics and Data Science concentration. I'm involved as a Software Developer for BUILD
-          UMass, where I use my software engineering skills for pro-bono app/web development and tech consulting for the
-          Amherst community. I also serve as a Designer for the HackUMass Organizing Team, responsible for graphics
-          design and production for the annual hackathon. I am interested in exploring the fields of Software
-          Engineering, Data Science, and Machine Learning, and I am open to opportunities for the same.
-        </p>
-      </div>
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span class="scroll-indicator-text">Scroll</span>
+      <span class="scroll-indicator-line"></span>
+    </a>
+  </section>
 
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-java-plain-wordmark colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
-        </div>
+  <!-- ============================================================
+       MARQUEE STRIP — adds visual energy like the inspo designs
+       ============================================================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Office Admin</span><span class="marquee-sep">✦</span>
+      <span>Case Manager</span><span class="marquee-sep">✦</span>
+      <span>Security Team Lead</span><span class="marquee-sep">✦</span>
+      <span>Computer System Technician</span><span class="marquee-sep">✦</span>
+      <span>Operations Coordinator</span><span class="marquee-sep">✦</span>
+      <span>Office Admin</span><span class="marquee-sep">✦</span>
+      <span>Case Manager</span><span class="marquee-sep">✦</span>
+      <span>Security Team Lead</span><span class="marquee-sep">✦</span>
+      <span>Computer System Technician</span><span class="marquee-sep">✦</span>
+      <span>Operations Coordinator</span><span class="marquee-sep">✦</span>
+    </div>
+  </div>
 
-        <!-- Technology Stack #2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
-          <i class="devicon-react-original colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <p>My preferred technologies for front-end web development and component design.</p>
-        </div>
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-label reveal">// About Me</h2>
+      <h3 class="section-heading reveal">
+        Building <span class="text-accent">Professional Excellence</span><br>
+        Through Diverse Experience
+      </h3>
 
-        <!-- Technology Stack #3: Back-End -->
-        <div class="tech">
-          <h2>Back-End</h2>
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <p>My preferred technologies for back-end web programming and database architecture.</p>
-        </div>
-
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-docker-plain-wordmark colored"></i>
-          <p>My favorite tools for version control, code editing, and container orchestration.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="user-details">
-        <h1>Featured Projects</h1>
-      </div>
-
-      <!-- User Project #1: Personal Résumé Website -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Personal Website" />
-            <img alt="Personal Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Personal Website</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
-              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+      <div class="about-grid">
+        <!-- Left — Image / Graphic -->
+        <div class="about-image-col reveal">
+          <div class="about-image-frame">
+            <img src="assets/img/IMG_0279.jpeg" alt="Gurdeep Singh" class="about-image" loading="lazy" width="500"
+              height="500">
+            <div class="about-image-accent" aria-hidden="true"></div>
           </div>
-          <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Check it out!</a>
-        </div>
-      </div>
-
-      <!-- User Project #2: Summer 2020 Project -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" />
-            <img alt="Perpetual Crusades" src="./assets/img/jpg/Perpetual-Crusades.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Perpetual Crusades</h3>
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-            style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
-            style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          <p style="text-align: justify">
-            I created a two-player online dice-based board game with a theme loosely set around Dungeons & Dragons. It
-            was developed as a submission for Penn Apps XXI, using ReactJS and CSS Grid Layouts for design and hosted on
-            GitHub Pages.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Summer-2020-Project"
-            >Check it out!</a
-          >
-        </div>
-      </div>
-
-      <!-- User Project #3: COVID-19 Tracker App -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/COVID19-Tracker-App.webp" alt="COVID-19 Tracker App" />
-            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/COVID19-Tracker-App.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>COVID-19 Tracker App</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
-              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
-            />
+          <!-- Experience badge -->
+          <div class="about-badge">
+            <span class="about-badge-number">3+</span>
+            <span class="about-badge-text">Years of<br>Experience</span>
           </div>
-          <p style="text-align: justify">
-            I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
-            Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
-            projections through graphs and charts.
+        </div>
+
+        <!-- Right — Text content -->
+        <div class="about-content reveal reveal-delay-1">
+          <div class="about-block">
+            <h4 class="about-subtitle"><i class="fas fa-user"></i> Background</h4>
+            <p>
+              I am a professional with a background in Computer System Technology from Mohawk College and hands-on
+              experience in security operations, immigration case handling, and office administration. I have developed
+              strong organizational, multitasking, and operational management skills through my work with multiple
+              organizations across Ontario.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h4 class="about-subtitle"><i class="fas fa-briefcase"></i> What I Do</h4>
+            <p>
+              My experience combines technology knowledge with client service and operational efficiency. From managing
+              immigration case files and coordinating office operations to leading security teams across multiple sites,
+              I bring a versatile skill set to every role.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h4 class="about-subtitle"><i class="fas fa-star"></i> What Makes Me Valuable</h4>
+            <p>
+              I am passionate about improving processes, supporting teams, and delivering reliable solutions in
+              fast-paced environments. My ability to adapt across industries — from IT to security to immigration —
+              makes me a uniquely flexible professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION — Numbered list like Ardian's "01 .. 04"
+       ============================================================ -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-label reveal">// Work History</h2>
+      <h3 class="section-heading reveal">
+        Professional <span class="text-accent">Experience</span>
+      </h3>
+
+      <div class="exp-list">
+        <!-- 01 -->
+        <article class="exp-item reveal" tabindex="0">
+          <span class="exp-num" aria-hidden="true">01</span>
+          <div class="exp-body">
+            <h4 class="exp-role">Office Administrator</h4>
+            <p class="exp-company"><i class="fas fa-building"></i> Raavi Pathway Inc.</p>
+            <p class="exp-desc">
+              Managing day-to-day office operations for a growing immigration consultancy, streamlining administrative
+              workflows, coordinating schedules, and ensuring seamless communication between clients and case management
+              teams.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Office Management</span>
+              <span class="tag">Client Relations</span>
+              <span class="tag">Operations</span>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Oct 2025 – Present</span>
+            <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Mississauga, ON</span>
+          </div>
+          <div class="exp-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+        </article>
+
+        <!-- 02 -->
+        <article class="exp-item reveal" tabindex="0">
+          <span class="exp-num" aria-hidden="true">02</span>
+          <div class="exp-body">
+            <h4 class="exp-role">Case Manager</h4>
+            <p class="exp-company"><i class="fas fa-building"></i> Raavi Pathway Inc.</p>
+            <p class="exp-desc">
+              Handling end-to-end immigration case files, guiding clients through complex application processes, and
+              ensuring compliance with Canadian immigration regulations. Preparing documentation, tracking case
+              progress,
+              and delivering timely outcomes for clients pursuing work permits, study permits, and permanent residency.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Immigration Law</span>
+              <span class="tag">Case Management</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Oct 2025 – Present</span>
+            <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Mississauga, ON</span>
+          </div>
+          <div class="exp-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+        </article>
+
+        <!-- 03 -->
+        <article class="exp-item reveal" tabindex="0">
+          <span class="exp-num" aria-hidden="true">03</span>
+          <div class="exp-body">
+            <h4 class="exp-role">Security Team Lead</h4>
+            <p class="exp-company"><i class="fas fa-building"></i> Logixx Security Inc.</p>
+            <p class="exp-desc">
+              Leading security operations and supervising team members to ensure comprehensive site protection.
+              Coordinating shift schedules, conducting security assessments, and implementing safety protocols across
+              multiple high-profile locations.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Team Leadership</span>
+              <span class="tag">Security Ops</span>
+              <span class="tag">Incident Management</span>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Jan 2025 – Present</span>
+            <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Hamilton, ON</span>
+          </div>
+          <div class="exp-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+        </article>
+
+        <!-- 04 -->
+        <article class="exp-item reveal" tabindex="0">
+          <span class="exp-num" aria-hidden="true">04</span>
+          <div class="exp-body">
+            <h4 class="exp-role">Security Team Lead</h4>
+            <p class="exp-company"><i class="fas fa-building"></i> Canadian Protection Services</p>
+            <p class="exp-desc">
+              Directed a team of security professionals across multiple sites, managing personnel schedules, conducting
+              training sessions, and maintaining high standards of safety and compliance.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Leadership</span>
+              <span class="tag">Training</span>
+              <span class="tag">Compliance</span>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Aug 2024 – Oct 2025</span>
+          </div>
+          <div class="exp-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+        </article>
+
+        <!-- 05 -->
+        <article class="exp-item reveal" tabindex="0">
+          <span class="exp-num" aria-hidden="true">05</span>
+          <div class="exp-body">
+            <h4 class="exp-role">Security Guard</h4>
+            <p class="exp-company"><i class="fas fa-building"></i> Magnum Protective Services Limited</p>
+            <p class="exp-desc">
+              Provided reliable site security and access control services. Conducted regular patrols, monitored
+              surveillance systems, and maintained detailed incident reports. Recognized for professionalism, which
+              led to advancement into team leadership roles.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Site Security</span>
+              <span class="tag">Surveillance</span>
+              <span class="tag">Access Control</span>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date"><i class="fas fa-calendar-alt"></i> Jun 2023 – Nov 2024</span>
+          </div>
+          <div class="exp-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION — numbered cards like Ardian inspo
+       ============================================================ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-label reveal">// Featured Work</h2>
+      <h3 class="section-heading reveal">
+        Showcasing <span class="text-accent">Projects</span><br>
+        That Define My Expertise
+      </h3>
+
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <article class="project-card reveal" tabindex="0">
+          <div class="project-card-number" aria-hidden="true">01</div>
+          <div class="project-card-icon"><i class="fas fa-file-alt"></i></div>
+          <h4 class="project-card-title">Immigration Case Management Workflow</h4>
+          <p class="project-card-description">
+            Designed and improved the document handling process and case tracking system for an immigration consultancy.
+            Streamlined client intake procedures, reducing processing time and improving documentation accuracy.
           </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/covid19-tracker-app">
-            Check it out!
+          <div class="project-card-role">
+            <strong>Role:</strong> Case Manager & Process Designer
+          </div>
+          <div class="project-card-tags">
+            <span class="tag">Case Tracking</span>
+            <span class="tag">Process Optimization</span>
+            <span class="tag">Documentation</span>
+          </div>
+          <div class="project-card-arrow" aria-hidden="true"><i class="fas fa-arrow-up-right"></i></div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card reveal reveal-delay-1" tabindex="0">
+          <div class="project-card-number" aria-hidden="true">02</div>
+          <div class="project-card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4 class="project-card-title">Security Operations Leadership</h4>
+          <p class="project-card-description">
+            Led multi-site security teams, developing comprehensive safety protocols and training programs. Ensured
+            safety operations across multiple high-profile locations in the Hamilton and Greater Toronto Area.
+          </p>
+          <div class="project-card-role">
+            <strong>Role:</strong> Security Team Lead
+          </div>
+          <div class="project-card-tags">
+            <span class="tag">Team Management</span>
+            <span class="tag">Safety Protocols</span>
+            <span class="tag">Risk Assessment</span>
+          </div>
+          <div class="project-card-arrow" aria-hidden="true"><i class="fas fa-arrow-up-right"></i></div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card reveal reveal-delay-2" tabindex="0">
+          <div class="project-card-number" aria-hidden="true">03</div>
+          <div class="project-card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4 class="project-card-title">IT Systems & Technical Support</h4>
+          <p class="project-card-description">
+            Applied computer systems technology training to provide technical support and systems troubleshooting.
+            Assisted with hardware repairs, network configurations, and user support across organizational environments.
+          </p>
+          <div class="project-card-role">
+            <strong>Role:</strong> Computer System Technician
+          </div>
+          <div class="project-card-tags">
+            <span class="tag">Technical Support</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Troubleshooting</span>
+          </div>
+          <div class="project-card-arrow" aria-hidden="true"><i class="fas fa-arrow-up-right"></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       ============================================================ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-label reveal">// Core Skills & Expertise</h2>
+      <h3 class="section-heading reveal">
+        <span class="text-accent">Skills</span> That Drive Results
+      </h3>
+
+      <div class="skills-grid">
+        <!-- Professional Skills -->
+        <div class="skills-category reveal">
+          <h4 class="skills-category-title"><i class="fas fa-briefcase"></i> Professional Skills</h4>
+          <div class="skills-badges">
+            <span class="skill-badge"><i class="fas fa-scale-balanced"></i> Canadian Immigration Law</span>
+            <span class="skill-badge"><i class="fas fa-folder-open"></i> Case Handling</span>
+            <span class="skill-badge"><i class="fas fa-headset"></i> Client Support</span>
+            <span class="skill-badge"><i class="fas fa-file-lines"></i> Office Administration</span>
+            <span class="skill-badge"><i class="fas fa-file-contract"></i> Document Management</span>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="skills-category reveal reveal-delay-1">
+          <h4 class="skills-category-title"><i class="fas fa-code"></i> Technical Skills</h4>
+          <div class="skills-badges">
+            <span class="skill-badge"><i class="fas fa-desktop"></i> Computer Systems Technology</span>
+            <span class="skill-badge"><i class="fab fa-microsoft"></i> Microsoft Office Suite</span>
+            <span class="skill-badge"><i class="fas fa-wrench"></i> Technical Support</span>
+            <span class="skill-badge"><i class="fas fa-network-wired"></i> Networking</span>
+            <span class="skill-badge"><i class="fas fa-hard-drive"></i> Hardware Maintenance</span>
+          </div>
+        </div>
+
+        <!-- Operational Skills -->
+        <div class="skills-category reveal reveal-delay-2">
+          <h4 class="skills-category-title"><i class="fas fa-gears"></i> Operational Skills</h4>
+          <div class="skills-badges">
+            <span class="skill-badge"><i class="fas fa-arrows-spin"></i> Operations Coordination</span>
+            <span class="skill-badge"><i class="fas fa-people-group"></i> Team Leadership</span>
+            <span class="skill-badge"><i class="fas fa-shield-halved"></i> Security Operations</span>
+            <span class="skill-badge"><i class="fas fa-list-check"></i> Multitasking</span>
+            <span class="skill-badge"><i class="fas fa-chart-line"></i> Process Improvement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-label reveal">// Education</h2>
+      <h3 class="section-heading reveal">
+        Academic <span class="text-accent">Background</span>
+      </h3>
+
+      <div class="education-card reveal">
+        <div class="education-icon" aria-hidden="true">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="education-content">
+          <h4 class="education-degree">Computer System Technician</h4>
+          <p class="education-school"><i class="fas fa-university"></i> Mohawk College</p>
+          <p class="education-date"><i class="fas fa-calendar-alt"></i> 2022 – 2024</p>
+          <p class="education-description">
+            Completed a comprehensive program in Computer System Technology covering hardware support, network
+            administration, operating systems, and IT troubleshooting. Gained practical experience with enterprise-level
+            tools and developed a strong technical foundation for diverse career paths.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-label reveal">// Get in Touch</h2>
+      <h3 class="section-heading reveal">
+        Let's <span class="text-accent">Connect</span>
+      </h3>
+
+      <div class="contact-grid">
+        <!-- Left — Contact Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm always open to new opportunities and collaborations. Feel free to reach out — whether you have a
+            question, a job opportunity, or just want to connect.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h5>Location</h5>
+                <p>Brampton, Ontario, Canada</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h5>Phone</h5>
+                <a href="tel:+16132021834">+1 (613) 202-1834</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h5>Email</h5>
+                <a href="mailto:srangurdeepsingh1@gmail.com">srangurdeepsingh1@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <h5>LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/gurdeep-singh/" target="_blank"
+                  rel="noopener noreferrer">linkedin.com/in/gurdeep-singh</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right — Contact Form -->
+        <div class="contact-form-wrapper reveal reveal-delay-1">
+          <form id="contactForm" action="mailto:srangurdeepsingh1@gmail.com" method="POST" enctype="text/plain"
+            novalidate>
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your full name" required autocomplete="name">
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required
+                autocomplete="email">
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <!-- Status messages -->
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">Gurdeep Singh<span class="logo-dot">.</span></a>
+        <p class="footer-tagline">Office Admin | Case Worker | Computer System Technician</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h5>Connect</h5>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/gurdeep-singh/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:srangurdeepsingh1@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+16132021834" aria-label="Phone">
+            <i class="fas fa-phone-alt"></i>
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Use Project #4: Valuto: Account Management System -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/webp/Valuto-Account-Management.webp"
-              alt="Valuto: Account Management System"
-            />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/Valuto-Account-Management.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Valuto: Account Management System</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
-              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I developed a CLI system for accounting management and financial statement maintenance. The purpose of the
-            system is to maintain a record of the funds received, used, disseminated and donated by an organization.
-            Details of transactions and maintenance of a budget and tallying of current balance/inventory in cash/kind
-            is incorporated in this system.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Valuto-Account-Management-System">
-            Check it out!
-          </a>
-        </div>
-      </div>
-    </section>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gurdeep Singh. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <p>&copy; Aditya Vikram Singh, 2020</p>
-    </footer>
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="assets/js/main.js"></script>
+</body>
 
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>

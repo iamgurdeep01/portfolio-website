@@ -1,0 +1,966 @@
+Personal Portfolio Website — Product Requirements Document (PRD)
+
+
+1. Site Overview
+
+
+Purpose
+
+
+Create a professional personal portfolio website for Gurdeep Singh that:
+
+Showcases professional background in immigration case management, office administration, security leadership, and IT systems
+
+Highlights experience, skills, and career progression
+
+Builds credibility with recruiters, employers, and clients
+
+Serves as a central professional brand beyond LinkedIn
+
+
+
+Primary Goals
+Help recruiters quickly understand your profile and experience.
+
+Showcase your career transition: IT → Security Leadership → Immigration Case Management / Office Administration.
+
+Generate job opportunities and professional collaborations.
+
+Provide an easy way to contact you.
+
+
+
+Target Audience
+Recruiters and hiring managers (Canada / Immigration firms / Admin roles)
+
+Immigration consulting companies
+
+Tech-support or office administration employers
+
+Professional collaborators
+
+Clients seeking immigration case assistance
+
+2. Website Structure
+
+
+Recommended Approach:
+
+Single Page Application (SPA) with smooth scrolling sections.
+
+
+
+Navigation Menu:
+
+Home
+
+About
+
+Experience
+
+Projects / Work
+
+Skills
+
+Education
+
+Contact
+
+
+
+Sticky top navigation bar.
+
+3. Pages & Sections
+
+
+3.1 Hero / Landing Section
+
+
+Content (From LinkedIn)
+
+
+Name:
+
+Gurdeep Singh
+
+
+
+Headline:
+
+Office Admin | Case Worker | Computer System Technician
+
+
+
+Short Intro:
+
+Professional with experience in immigration case handling, security leadership, and computer systems technology. Skilled in organization, operations, and client-focused solutions.
+
+
+
+CTA Buttons:
+
+View Experience
+
+Contact Me
+
+Download Resume
+
+
+
+Layout
+
+
+Inspired by the screenshot style:
+
+Full screen hero section
+
+Left side: text
+
+Right side: professional portrait image
+
+Large bold typography behind the name (overlay style)
+
+
+
+Example structure:
+
+
+
+Left Column:
+
+Name (large)
+
+Headline
+
+Short intro
+
+CTA buttons
+
+
+
+Right Column:
+
+Profile image
+
+Background gradient
+
+
+
+Animations
+Text reveal animation
+
+Smooth fade-in image
+
+CTA hover animation
+
+Scroll indicator animation
+
+3.2 About Me Section
+
+
+Content (from LinkedIn Summary)
+
+
+You can use this improved version:
+
+
+
+About Me:
+
+I am a professional with a background in Computer System Technology from Mohawk College and hands-on experience in security operations, immigration case handling, and office administration. I have developed strong organizational, multitasking, and operational management skills through my work with multiple organizations across Ontario.
+
+
+
+My experience combines technology knowledge with client service and operational efficiency. I am passionate about improving processes, supporting teams, and delivering reliable solutions in fast-paced environments.
+
+
+
+Layout
+
+
+Two-column layout:
+
+Left:
+
+Profile image or abstract graphic
+
+
+
+Right:
+
+Text content
+
+
+
+Sub-sections:
+
+Background
+
+What I Do
+
+What Makes Me Valuable
+
+
+
+Animations
+Scroll-triggered fade
+
+Highlight keywords animation
+
+3.3 Experience / Work History
+
+
+Content (from LinkedIn)
+
+
+Office Administrator
+
+Raavi Pathway Inc.
+
+Oct 2025 – Present
+
+
+
+Case Manager
+
+Raavi Pathway Inc.
+
+Oct 2025 – Present
+
+Mississauga, Ontario
+
+
+
+Security Team Lead
+
+Logixx Security Inc.
+
+Jan 2025 – Present
+
+Hamilton, Ontario
+
+
+
+Security Team Lead
+
+Canadian Protection Services
+
+Aug 2024 – Oct 2025
+
+
+
+Security Guard
+
+Magnum Protective Services Limited
+
+Jun 2023 – Nov 2024
+
+
+
+Layout
+
+
+Vertical timeline or modern cards (like inspiration screenshot)
+
+
+
+Each card includes:
+
+Company name
+
+Role
+
+Duration
+
+Location
+
+Short description
+
+
+
+Animations
+
+
+Timeline progress animation
+
+Cards appear on scroll
+
+Hover highlight
+
+3.4 Projects / Work Showcase
+
+
+Since LinkedIn doesn’t list projects, create professional portfolio projects such as:
+
+
+
+Example Projects:
+
+
+
+Immigration Case Management Workflow
+
+Improved document handling process and case tracking system.
+
+
+
+Security Operations Leadership
+
+Led teams and ensured safety operations across multiple locations.
+
+
+
+IT Systems Internship Experience
+
+Technical support and systems troubleshooting experience.
+
+
+
+Layout
+
+
+Grid layout similar to inspiration design.
+
+
+
+Each project card includes:
+
+Title
+
+Description
+
+Role
+
+Skills used
+
+
+
+Hover interaction:
+
+Project preview animation
+
+3.5 Skills Section
+
+
+Content (from LinkedIn)
+
+
+Primary Skills:
+
+Canadian Immigration Law
+
+Case Handling
+
+Microsoft Word
+
+Operations Coordination
+
+Team Leadership
+
+Security Operations
+
+Computer Systems Technology
+
+Client Support
+
+
+
+Layout
+
+
+Modern visual style:
+
+Option 1: Skill bars
+
+Option 2: Skill badges
+
+Option 3 (Best): Icon-based skill grid
+
+
+
+Example categories:
+
+
+
+Professional Skills
+
+Technical Skills
+
+Operational Skills
+
+
+
+Animations
+
+
+Hover glow
+
+Progress animations
+
+3.6 Education
+
+
+Content
+
+
+Mohawk College
+
+Computer System Technician
+
+2022 – 2024
+
+
+
+Layout
+
+
+Minimal academic card
+
+
+
+Optional:
+
+Include icons and timeline style
+
+3.7 Testimonials / Recommendations (Optional)
+
+
+Future-ready section for LinkedIn recommendations.
+
+
+
+Layout:
+
+Carousel style cards.
+
+
+
+Placeholder text until added.
+
+3.8 Contact Section
+
+
+Content
+
+
+Location:
+
+Brampton, Ontario, Canada
+
+
+
+Phone:
+
++1 (613) 202-1834
+
+
+
+Email:
+
+gurdeep.singh22@triosstudent.com
+
+
+
+LinkedIn:
+
+Your LinkedIn profile link
+
+
+
+Contact Form Fields
+
+
+Name
+
+Email
+
+Message
+
+
+
+Buttons:
+
+Send Message
+
+
+
+Layout
+
+
+Split layout:
+
+Left: Contact info
+
+Right: Contact form
+
+
+
+Interaction
+
+
+Form validation
+
+Success message animation
+
+3.9 Footer
+
+
+Content:
+
+Name
+
+Quick links
+
+Social links
+
+Copyright
+
+
+
+Example:
+
+© 2026 Gurdeep Singh. All rights reserved.
+
+4. Design & Style Guidelines
+
+
+Based on your inspiration screenshots:
+
+
+
+Overall Visual Style
+
+
+Bold
+
+Modern
+
+Professional
+
+Clean typography
+
+Strong hero visuals
+
+Colour Palette
+
+
+Primary Color
+
+#FF3B1F (Modern orange-red)
+
+
+
+Secondary Color
+
+#0F172A (Deep navy/black)
+
+
+
+Accent Color
+
+#3B82F6 (Soft blue highlight)
+
+
+
+Background Light
+
+#F8FAFC
+
+
+
+Background Dark
+
+#0B0F19
+
+
+
+Text Primary
+
+#111827
+
+
+
+Text Secondary
+
+#6B7280
+
+Typography
+
+
+Headings
+
+Inter / Poppins / Satoshi
+
+
+
+Body
+
+Inter / Open Sans
+
+
+
+Hero Title
+
+Bold Display Font (like Neue Montreal / Clash Display)
+
+
+
+Font Sizes
+
+
+
+Hero Title
+
+64–80px
+
+
+
+Section Title
+
+36–44px
+
+
+
+Body
+
+16–18px
+
+Spacing System
+
+
+Use 8pt spacing grid.
+
+
+
+Section padding:
+
+120px desktop
+
+80px tablet
+
+60px mobile
+
+
+
+Max width:
+
+1200px container
+
+Layout Principles
+
+
+Large hero section
+
+Strong typography
+
+Image overlays
+
+Card-based sections
+
+Clean whitespace
+
+Minimal clutter
+
+Dark Mode
+
+
+Default: Dark mode
+
+
+
+Optional toggle:
+
+Light / Dark switch
+
+5. Animation & Microinteractions
+
+
+Hero text animation
+
+Scroll reveal sections
+
+Button hover effects
+
+Image parallax
+
+Smooth transitions
+
+Project card hover expand
+
+Navigation highlight
+
+
+
+Use:
+
+Framer Motion or GSAP
+
+6. Technical Requirements
+
+
+Framework Recommendation
+
+Next.js or React + Tailwind CSS
+
+
+
+Reason:
+
+Fast performance
+
+SEO optimized
+
+Scalable
+
+Modern UI capability
+
+Website Type
+
+
+Single Page Application (SPA)
+
+
+
+Sections scroll-based.
+
+Responsiveness
+
+
+Must support:
+
+
+
+Desktop
+
+Tablet
+
+Mobile
+
+Ultra-wide screens
+
+
+
+Breakpoints:
+
+Mobile: 480px
+
+Tablet: 768px
+
+Laptop: 1024px
+
+Desktop: 1280px+
+
+Performance
+
+
+Lazy loading images
+
+Optimized images (WebP)
+
+Lighthouse score 90+
+
+SEO Requirements
+
+
+Meta Title
+
+Gurdeep Singh | Portfolio
+
+
+
+Meta Description
+
+Office Administrator, Case Manager, and Computer System Technician portfolio website.
+
+
+
+Open Graph Tags
+
+LinkedIn preview support
+
+
+
+Structured Data
+
+Person schema
+
+Accessibility
+
+
+WCAG 2.1 compliance
+
+Keyboard navigation
+
+ARIA labels
+
+Contrast ratio compliance
+
+Alt text for images
+
+Navigation
+
+
+Sticky navbar
+
+Smooth scroll
+
+Active section highlight
+
+Contact Form Functionality
+
+
+Options:
+
+Email integration
+
+OR
+
+Formspree
+
+OR
+
+Netlify forms
+
+
+
+Recommended:
+
+Send message directly to email.
+
+7. Content Strategy
+
+
+Tone of Voice
+
+
+Professional
+
+Confident
+
+Clear
+
+Direct
+
+
+
+Matches LinkedIn writing style.
+
+CTA Strategy
+
+
+Primary CTA
+
+Contact Me
+
+
+
+Secondary CTAs
+
+View Experience
+
+Download Resume
+
+Connect on LinkedIn
+
+Content Flow
+
+
+Hero
+
+→ About
+
+→ Experience
+
+→ Skills
+
+→ Projects
+
+→ Education
+
+→ Contact
+
+
+
+Designed for recruiters who scan quickly.
+
+8. Future Scalability
+
+
+Add later:
+
+Blog
+
+Case studies
+
+Immigration resources
+
+Client success stories
+
+Video introduction
+
+9. Suggested Tech Stack
+
+
+Frontend
+
+Next.js
+
+Tailwind CSS
+
+Framer Motion
+
+
+
+Hosting
+
+Vercel
+
+
+
+CMS (optional later)
+
+Sanity or Notion API
+
+
+
+Analytics
+
+Google Analytics
+
+10. Developer Implementation Notes
+
+
+Folder Structure
+
+
+
+/components
+
+/sections
+
+/styles
+
+/public/images
+
+/utils
+
+
+
+Main Sections
+
+Hero.jsx
+
+About.jsx
+
+Experience.jsx
+
+Skills.jsx
+
+Projects.jsx
+
+Education.jsx
+
+Contact.jsx
+
+
+
